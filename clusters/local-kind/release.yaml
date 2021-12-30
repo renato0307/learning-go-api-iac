@@ -7,8 +7,8 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: learning-go-api
-      version: '0.1.0'
+      chart: ./charts/learning-go-api
+      version: '>=0.0.1 <1.0.0'
       sourceRef:
         kind: GitRepository
         name: learning-go-api-iac-repo

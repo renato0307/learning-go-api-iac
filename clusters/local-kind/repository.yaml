@@ -11,5 +11,6 @@ spec:
   ignore: |
     # exclude all
     /*
-    # include charts directory
-    !/charts
+    # include charts
+     directory
+    !/charts/
