@@ -19,7 +19,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: ./flux/flux-system
+    name: flux-system
   update:
     path: ./flux
     strategy: Setters
