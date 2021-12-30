@@ -15,4 +15,6 @@ spec:
         namespace: flux-system
       interval: 1m
   values:
+    image:
+      tag: 0.0.3 # {"$imagepolicy": "flux-system:learning-go-api:tag"}
     replicaCount: 2
