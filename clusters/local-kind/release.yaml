@@ -1,0 +1,18 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: learning-go-api
+  namespace: learning-go-api
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: learning-go-api
+      version: '0.1.0'
+      sourceRef:
+        kind: GitRepository
+        name: learning-go-api-iac-repo
+        namespace: flux-system
+      interval: 1m
+  values:
+    replicaCount: 2
