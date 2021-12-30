@@ -5,6 +5,6 @@ metadata:
   name: learning-go-api
   namespace: flux-system
 spec:
-  image: hub.docker.com/r/renato0307/learning-go-api
+  image: renato0307/learning-go-api
   interval: 1m0s
 
