@@ -16,5 +16,5 @@ spec:
       interval: 1m
   values:
     image:
-      tag: 0.0.11 # {"$imagepolicy": "flux-system:learning-go-api:tag"}
+      tag: 0.0.12 # {"$imagepolicy": "flux-system:learning-go-api:tag"}
     replicaCount: 2
