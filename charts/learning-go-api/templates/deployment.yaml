@@ -39,6 +39,16 @@ spec:
                 secretKeyRef:
                     name: learning-go-api-secrets
                     key: CURRCONV_API_KEY
+            - name: AUTH_JWKS_LOCATION
+              valueFrom:
+                secretKeyRef:
+                    name: learning-go-api-secrets
+                    key: AUTH_JWKS_LOCATION
+            - name: AUTH_TOKEN_ISS
+              valueFrom:
+                secretKeyRef:
+                    name: learning-go-api-secrets
+                    key: AUTH_TOKEN_ISS
           ports:
             - name: http
               containerPort: 8080
